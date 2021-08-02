@@ -1,0 +1,175 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+}
+
+body{
+  margin :0;
+  font-size:1.1em;
+}
+#nav{background-color: #4c4d8f;
+position: relative;
+width : 100%;
+height: 100%;
+margin-top: 0%;
+padding-top: 10%;
+padding-bottom: 10%;
+text-align: center;
+color: white;
+}
+.nav_a{
+  font-size:1.2em;
+}
+#header {
+  background-color: lightgrey;
+  height : 0px;
+  width :0%;
+  float : right;
+}
+.img_profile{
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-bottom : 0%;
+  width: 150px;
+  border-radius:75px;
+}
+.nav_a{
+  text-decoration-line: none;
+  color: white;
+}
+
+.proj {
+  padding : 0%;
+  vertical-align : top;
+  font-size : 3vw;
+  display : inline-block;
+}
+.proj_right {
+  width : 100%;
+  text-align: center;
+}
+
+.proj_center{
+  text-align:justify;
+}
+
+#section {
+  background-color: #ebede4;
+  height: 100%;
+  width : 90%;
+  padding : 5%;
+  font-size : 3vw;
+}
+.h1_first{
+  margin-bottom:0.2em; font-size: 6vw;
+}
+.bodytext{
+  text-align:justify;
+  text-indent: 2em;
+}
+.bodyimg{
+  width: 50%;
+}
+
+@media screen and (min-width: 1000px) {
+
+.container {width : 100%; height : 100%}
+
+#nav {
+  background-color: #4c4d8f; /*#65669c#4c4d8f#003A9A;*/
+  position: fixed;
+  height: 100%;
+  width :20%;
+  float : left;
+  text-align: center;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-top: 0%;
+  color: white;
+  font-size : 1vw;
+}
+
+.nav_a{
+  text-decoration-line: none;
+  font-size:1.0em;
+  color: white;
+}
+.img_profile{
+  margin-top: 30%;
+  width: 50%;
+  border-radius: 50%;
+}
+
+#header {
+  background-color: lightgrey;
+  height : 200px;
+  width :80%;
+  float : right;
+
+}
+
+#section {
+  background-color: #ebede4;
+  height: 100%;
+  width :70%;
+  float : right;
+  padding : 5%;
+  font-size : 1.3em;
+}
+.h1_first{
+  margin-bottom:0.2em; font-size: 2em;
+}
+.proj {
+  padding : 0%;
+  vertical-align : top;
+  display : inline-block;
+  font-size : 1.0em;
+}
+
+.proj_left{
+  width : 60%;
+  float : left;
+}
+.proj_right{
+  width : 30%;
+  float : right;
+  margin-right: 2%;
+  text-align: left;
+  /* overflow:hidden; */
+  transform : translate(0, 10%);
+}
+.bodytext{
+  text-align:justify;
+  text-indent: 2em;
+}
+.bodyimg{
+  width: 100%;
+}
+.proj_center{
+  width : 95%;
+  float : right;
+  margin-right: 5%;
+  text-align:justify;
+}
+.Content{
+  padding-left: 1em;
+  padding-bottom: 1em;
+  list-style-type: circle;
+}
+li{
+  margin-bottom: 0.7em;
+}
+.date{
+  background: none;
+  float:right;
+  margin-right: 0%;
+  padding: 0px;
+}
+
+#footer {
+  background-color: #EEEEEE;
+  height: 200px;
+  width : 70%;
+  float : right;
+}
+}
