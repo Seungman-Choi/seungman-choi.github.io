@@ -32,6 +32,14 @@ toggleBtn.addEventListener('click', () => {
 // const icons = document.getElementById('.navbar__icons');
 // const nav = document.getElementById('.navbar');
 
+
+toggleBtn.onclick = function(){
+  toggleBtn.classList.toggle('active');
+  menu.classList.toggle('active');
+  icon.classList.toggle('active');
+  nav.classList.toggle('active')
+}
+
 document.onclick = function(e){
   if(e.target.id !=='nav' && e.target.id !=='toggleBtn'&& e.target.id !=='menu')
   {menu.classList.remove('active');
@@ -40,11 +48,5 @@ document.onclick = function(e){
   }
 }
 
-// toggleBtn.onclick = function(){
-//   toggleBtn.classList.toggle('active');
-//   menu.classList.toggle('active');
-//   icon.classList.toggle('active');
-//   nav.classList.toggle('active')
-// }
     
     
