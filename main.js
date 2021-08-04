@@ -4,11 +4,11 @@ const icons = document.querySelector('.navbar__icons');
 const nav = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.navbar__menu')
 
-toggleBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  icons.classList.toggle('active');
-  nav.classList.toggle('active');
-});
+// toggleBtn.addEventListener('click', () => {
+//   menu.classList.toggle('active');
+//   icons.classList.toggle('active');
+//   nav.classList.toggle('active');
+// });
 // const bsCollapse = new bootstrap.Collapse(toggleBtn); // or menu?
 
 // navLinks.forEach((l) => { //bootstrap in html connection can be worked.
