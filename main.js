@@ -14,7 +14,8 @@ document.addEventListener('click', function(e){
     menu.classList.remove('active');
   icon.classList.remove('active');
   nav.classList.remove('active');
-  }});
+  }
+});
                           
 // 20210805 change
 // const toggleBtn = document.getElementById('navbar__toggleBtn');
