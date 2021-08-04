@@ -12,7 +12,8 @@ toggleBtn.addEventListener('click', () => {
     menu.classList.remove('active');
   icon.classList.remove('active');
   nav.classList.remove('active');
-  }
+  }});
+    
 });
 });
 
