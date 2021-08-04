@@ -2,23 +2,26 @@ const toggleBtn = document.querySelector('.navbar__toggleBtn');
 const menu = document.querySelector('.navbar__menu');
 const icons = document.querySelector('.navbar__icons');
 const nav = document.querySelector('.navbar');
-let pt = false;
+const navLinks = document.querySelectorAll('.menu')
+
 toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
   icons.classList.toggle('active');
   nav.classList.toggle('active');
-  return pt = true;
 });
+const bsCollapse = new bootstrap.Collapse(toggleBtn) // or menu?
+navLinks.forEach((l) => {
+  l.addEventListener('click', () => {bsCollapse.toggle()}
 
-document.addEventListener('click', function(e){
-if(e.target.id =='menu' && pt == true){
-  alert("same");
-//   menu.classList.remove('active');
-//   icon.classList.remove('active');
-//   nav.classList.remove('active');
-  return pt = false;
-  }
-});
+// document.addEventListener('click', function(e){
+// if(e.target.id =='menu' && pt == true){
+//   alert("same");
+// //   menu.classList.remove('active');
+// //   icon.classList.remove('active');
+// //   nav.classList.remove('active');
+//   return pt = false;
+//   }
+// });
                           
 // 20210805 change
 // const toggleBtn = document.getElementById('navbar__toggleBtn');
