@@ -41,7 +41,7 @@ toggleBtn.onclick = function(){
 }
 
 document.onclick = function(e){
-  if(e.target.id !=='nav' && e.target.id !=='toggleBtn'&& e.target.id !=='menu')
+  if(e.target.id !=='toggleBtn')
   {menu.classList.remove('active');
   icons.classList.remove('active');
   nav.classList.remove('active')
