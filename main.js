@@ -4,11 +4,11 @@ const icons = document.querySelector('.navbar__icons');
 const nav = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.menu')
 
-// toggleBtn.addEventListener('click', () => {
-//   menu.classList.toggle('active');
-//   icons.classList.toggle('active');
-//   nav.classList.toggle('active');
-// });
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  icons.classList.toggle('active');
+  nav.classList.toggle('active');
+});
 // const bsCollapse = new bootstrap.Collapse(toggleBtn); // or menu?
 
 // navLinks.forEach((l) => { //bootstrap in html connection can be worked.
@@ -32,13 +32,13 @@ const navLinks = document.querySelectorAll('.menu')
 // const icons = document.getElementById('.navbar__icons');
 // const nav = document.getElementById('.navbar');
 
-// document.onclick = function(e){
-//   if(e.target.id !=='nav' && e.target.id !=='toggleBtn'&& e.target.id !=='menu')
-//   {menu.classList.remove('active');
-//   icon.classList.remove('active');
-//   nav.classList.remove('active')
-//   }
-// }
+document.onclick = function(e){
+  if(e.target.id !=='nav' && e.target.id !=='toggleBtn'&& e.target.id !=='menu')
+  {menu.classList.remove('active');
+  icon.classList.remove('active');
+  nav.classList.remove('active')
+  }
+}
 
 // toggleBtn.onclick = function(){
 //   toggleBtn.classList.toggle('active');
