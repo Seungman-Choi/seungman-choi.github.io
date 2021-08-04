@@ -9,9 +9,11 @@ toggleBtn.addEventListener('click', () => {
   icons.classList.toggle('active');
   nav.classList.toggle('active');
 });
-const bsCollapse = new bootstrap.Collapse(toggleBtn) // or menu?
+// const bsCollapse = new bootstrap.Collapse(toggleBtn); // or menu?
+
 navLinks.forEach((l) => {
-  l.addEventListener('click', () => {bsCollapse.toggle()})
+  l.addEventListener('click', () => {toggleBtn.classList.toggle('show')})
+//   l.addEventListener('click', () => {bsCollapse.toggle()})
   });
 
 // document.addEventListener('click', function(e){
