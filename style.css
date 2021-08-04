@@ -1,0 +1,156 @@
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: #d49466;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin :0;
+}
+.img_profile{
+  display:inline-block;
+  margin-top: 30%;
+  width: 50%;
+  border-radius: 50%;
+  text-align: center;
+}
+.navbar {
+  position:fixed;
+  width :20%;
+  height: 100%;
+  display : block;
+  justify-content :space-between;
+  align-items : center;
+  text-align: center;
+  background-color: var(--background-color);
+  padding-top: 1%;
+  padding-bottom: 0%;
+  font-size: 1.2vw;
+}
+
+.navbar_a{ /*anchor tag*/
+  text-decoration: none;
+  color : var(--text-color);
+}
+
+.navbar__logo{
+  font-size : 1em;
+  color: var(--text-color);
+}
+.navbar__logo i{
+  color: var(--accent-color);
+}
+
+.navbar__menu{
+  display: block;
+  list-style: none;
+  padding-left:0;
+  font-size: 1.0vw;
+  padding : 0px 10px;
+}
+.navbar__menu li{
+  margin :0.7vw 0;
+  padding: 0.7vw 30px;
+}
+.navbar__menu li:hover{
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+.navbar__icons {
+  list-style: none;
+  color: var(--text-color);
+  display: flex;
+  font-size : 1em;
+  padding-left:0;
+  float:right;
+  position :relative;
+  left : 0px;
+  bottom : -0.8vw;
+
+}
+.navbar__icons li {
+  padding-right : 1em;
+  position :relative;
+}
+.navbar__toggleBtn{
+  display:none;
+
+}
+
+@media screen and (max-width:800px){
+  .img_profile{
+    display:none;
+  }
+  .navbar__logo i {
+    display : inline-block;
+    /* position : absolute; */
+    /* left : 15px; */
+    font-size: 20px;
+    float:left;
+    padding : 0px 10px;
+    /* left:1px; */
+  }
+
+  .navbar__logo br {
+    display: inline;
+    content: ' ';
+    clear:none;
+  }
+  .navbar__logo{
+    width:100%;
+    margin-left: 0%;
+  }
+  .navbar p {
+    display: none;
+  }
+  .navbar {font-size : 0.7em;}
+  .navbar{
+    width:100%;
+    height:50px;
+    text-align: left;
+    padding: 0px 0px;
+  }
+  .navbar_a{
+    position:relative;
+    left : 0px;
+  }
+  .navbar__toggleBtn{
+  display : block;
+  position : absolute;
+  right: 20px;
+  top: 14px;
+  font-size: 2em;
+  color: var(--accent-color);
+}
+  .navbar__menu {
+    display : none;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+      padding : 0px 0px;
+  }
+  .navbar__menu li {
+    width : 90%;
+    text-align: center;
+    margin :0.2vw 0;
+    padding: 1vw 30px;
+  }
+  .navbar__icons{
+    display : none;
+    justify-content: flex-end;
+    position :relative;
+    left : 6px;
+    bottom : 10px;
+    width: 100%;
+  }
+  .navbar__icons li {
+    padding-right : 0.5em;
+  }
+
+
+  .navbar.active{height:210px;}
+  .navbar__menu.active,
+  .navbar__icons.active{
+    display: flex;
+  }
+}
