@@ -9,13 +9,14 @@ toggleBtn.addEventListener('click', () => {
   return pt = true;
 });
 
-//document.addEventListener('click', function(e){
-//if(e.target.id =='menu' && pt == true){
-//  menu.classList.remove('active');
-//icon.classList.remove('active');
-//nav.classList.remove('active');
-//}
-//});
+document.addEventListener('click', function(e){
+if(e.target.id =='menu' && pt == true){
+  menu.classList.remove('active');
+  icon.classList.remove('active');
+  nav.classList.remove('active');
+  return pt = false;
+  }
+});
                           
 // 20210805 change
 // const toggleBtn = document.getElementById('navbar__toggleBtn');
