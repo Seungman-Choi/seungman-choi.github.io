@@ -40,13 +40,13 @@ toggleBtn.onclick = function(){
   nav.classList.toggle('active')
 }
 
-// document.onclick = function(e){
-//   if(e.target.id !=='nav' && e.target.id !=='toggleBtn'&& e.target.id !=='menu')
-//   {menu.classList.remove('active');
-//   icons.classList.remove('active');
-//   nav.classList.remove('active')
-//   }
-// }
+document.onclick = function(e){
+  if(e.target.id !=='nav' && e.target.id !=='toggleBtn'&& e.target.id !=='menu')
+  {menu.classList.remove('active');
+  icons.classList.remove('active');
+  nav.classList.remove('active')
+  }
+}
 
     
     
