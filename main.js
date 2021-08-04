@@ -19,13 +19,13 @@ const menu = document.querySelector('.navbar__menu');
 const icons = document.querySelector('.navbar__icons');
 const nav = document.querySelector('.navbar');
 
-document.onclick = function(e){
-  if(e.target.id !=='menu' && e.target.id !=='toggleBtn')
-  {menu.classList.remove('active');
-  icon.classList.remove('active');
-  nav.classList.remove('active')
-  }
-}
+// document.onclick = function(e){
+//   if(e.target.id !=='menu' && e.target.id !=='toggleBtn')
+//   {menu.classList.remove('active');
+//   icon.classList.remove('active');
+//   nav.classList.remove('active')
+//   }
+// }
 
 toggleBtn.onclick = function(){
   toggleBtn.classList.toggle('active');
