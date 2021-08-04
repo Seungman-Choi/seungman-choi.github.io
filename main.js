@@ -4,17 +4,17 @@ const icons = document.querySelector('.navbar__icons');
 const nav = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.menu')
 
-toggleBtn.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  icons.classList.toggle('active');
-  nav.classList.toggle('active');
-});
+// toggleBtn.addEventListener('click', () => {
+//   menu.classList.toggle('active');
+//   icons.classList.toggle('active');
+//   nav.classList.toggle('active');
+// });
 // const bsCollapse = new bootstrap.Collapse(toggleBtn); // or menu?
 
-navLinks.forEach((l) => { //bootstrap in html connection can be worked.
-  l.addEventListener('click', () => {toggleBtn.classList.toggle('show')})
-  l.addEventListener('click', () => {bsCollapse.toggle()})
-  });
+// navLinks.forEach((l) => { //bootstrap in html connection can be worked.
+//   l.addEventListener('click', () => {toggleBtn.classList.toggle('show')})
+//   l.addEventListener('click', () => {bsCollapse.toggle()})
+//   });
 
 // document.addEventListener('click', function(e){
 // if(e.target.id =='menu' && pt == true){
@@ -33,7 +33,7 @@ navLinks.forEach((l) => { //bootstrap in html connection can be worked.
 // const nav = document.getElementById('.navbar');
 
 // document.onclick = function(e){
-//   if(e.target.id !=='menu' && e.target.id !=='toggleBtn')
+//   if(e.target.id !=='nav' && e.target.id !=='toggleBtn'&& e.target.id !=='menu')
 //   {menu.classList.remove('active');
 //   icon.classList.remove('active');
 //   nav.classList.remove('active')
