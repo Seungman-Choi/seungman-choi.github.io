@@ -5,16 +5,7 @@ const nav = document.querySelector('.navbar');
 toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
   icons.classList.toggle('active');
-  nav.classList.toggle('active');
-  //
-  document.addEventListener('click', function(e){
-  if(e.target.id !=='menu'){
-    menu.classList.remove('active');
-  icon.classList.remove('active');
-  nav.classList.remove('active');
-  }});
-    
-});
+  nav.classList.toggle('active');    
 });
 
                           
