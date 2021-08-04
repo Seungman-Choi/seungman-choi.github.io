@@ -8,7 +8,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://kit.fontawesome.com/718ee7aebd.js" crossorigin="anonymous"></script>
-  <script src="main.js" defer></script>
+<!--   <script src="main.js" defer></script> -->
+  <script>
+    const toggleBtn = document.getElementById('navbar__toggleBtn');
+const menu = document.getElementById('.navbar__menu');
+const icons = document.getElementById('.navbar__icons');
+const nav = document.getElementById('.navbar');
+
+document.onclick = function(e){
+  if(e.target.id !=='menu' && e.target.id !=='toggleBtn')
+  {menu.classList.remove('active');
+  icon.classList.remove('active');
+  nav.classList.remove('active')
+  }
+}
+
+toggleBtn.onclick = function(){
+  toggleBtn.classList.toggle('active');
+  menu.classList.toggle('active');
+  icon.classList.toggle('active');
+  nav.classList.toggle('active')
+}
+  </script>
 </head>
 <body>
   <nav class ="navbar">
