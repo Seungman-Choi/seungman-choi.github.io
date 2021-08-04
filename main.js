@@ -23,12 +23,15 @@ document.onclick = function(e){
   if(e.target.id !=='menu' && e.target.id !=='toggleBtn')
   {menu.classList.remove('active');
   icon.classList.remove('active');
-  nav.classList.remove('active')}}
+  nav.classList.remove('active')
+  }
+}
 
 toggleBtn.onclick = function(){
   toggleBtn.classList.toggle('active');
   menu.classList.toggle('active');
   icon.classList.toggle('active');
-  nav.classList.toggle('active')}
+  nav.classList.toggle('active')
+}
     
     
