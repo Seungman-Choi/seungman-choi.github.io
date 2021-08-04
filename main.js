@@ -8,7 +8,7 @@ toggleBtn.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 document.addEventListener('click', function(e){
-  if(e.target.id !=='menu' && e.target.id !=='toggleBtn'){
+  if(e.target.id !=='menu'){
     menu.classList.remove('active');
   icon.classList.remove('active');
   nav.classList.remove('active');
