@@ -239,7 +239,7 @@ li{
   }
 
 
-  .navbar.active{height:240px;}
+  .navbar.active{height:230px;}
   .navbar__menu.active,
   .navbar__icons.active{
     display: flex;
