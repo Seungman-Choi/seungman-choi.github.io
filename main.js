@@ -8,7 +8,6 @@ toggleBtn.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 // 20210805 change
-
 // const toggleBtn = document.getElementById('navbar__toggleBtn');
 // const menu = document.getElementById('.navbar__menu');
 // const icons = document.getElementById('.navbar__icons');
