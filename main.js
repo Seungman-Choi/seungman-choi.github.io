@@ -11,9 +11,10 @@ toggleBtn.addEventListener('click', () => {
 
 document.addEventListener('click', function(e){
 if(e.target.id =='menu' && pt == true){
-  menu.classList.remove('active');
-  icon.classList.remove('active');
-  nav.classList.remove('active');
+  alert("same");
+//   menu.classList.remove('active');
+//   icon.classList.remove('active');
+//   nav.classList.remove('active');
   return pt = false;
   }
 });
