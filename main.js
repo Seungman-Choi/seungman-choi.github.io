@@ -36,14 +36,14 @@ toggleBtn.addEventListener('click', () => {
 toggleBtn.onclick = function(){
   toggleBtn.classList.toggle('active');
   menu.classList.toggle('active');
-  icon.classList.toggle('active');
+  icons.classList.toggle('active');
   nav.classList.toggle('active')
 }
 
 // document.onclick = function(e){
 //   if(e.target.id !=='nav' && e.target.id !=='toggleBtn'&& e.target.id !=='menu')
 //   {menu.classList.remove('active');
-//   icon.classList.remove('active');
+//   icons.classList.remove('active');
 //   nav.classList.remove('active')
 //   }
 // }
