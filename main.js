@@ -11,7 +11,7 @@ toggleBtn.addEventListener('click', () => {
 });
 // const bsCollapse = new bootstrap.Collapse(toggleBtn); // or menu?
 
-// navLinks.forEach((l) => {
+// navLinks.forEach((l) => { //bootstrap in html connection can be worked.
 //   l.addEventListener('click', () => {toggleBtn.classList.toggle('show')})
 //   l.addEventListener('click', () => {bsCollapse.toggle()})
   });
