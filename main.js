@@ -14,11 +14,6 @@
 // const icons = document.getElementById('.navbar__icons');
 // const nav = document.getElementById('.navbar');
 
-const toggleBtn = document.querySelector('.navbar__toggleBtn');
-const menu = document.querySelector('.navbar__menu');
-const icons = document.querySelector('.navbar__icons');
-const nav = document.querySelector('.navbar');
-
 // document.onclick = function(e){
 //   if(e.target.id !=='menu' && e.target.id !=='toggleBtn')
 //   {menu.classList.remove('active');
@@ -27,11 +22,11 @@ const nav = document.querySelector('.navbar');
 //   }
 // }
 
-toggleBtn.onclick = function(){
-  toggleBtn.classList.toggle('active');
-  menu.classList.toggle('active');
-  icon.classList.toggle('active');
-  nav.classList.toggle('active')
-}
+// toggleBtn.onclick = function(){
+//   toggleBtn.classList.toggle('active');
+//   menu.classList.toggle('active');
+//   icon.classList.toggle('active');
+//   nav.classList.toggle('active')
+// }
     
     
