@@ -5,9 +5,16 @@ const nav = document.querySelector('.navbar');
 toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
   icons.classList.toggle('active');
-  nav.classList.toggle('active');    
+  nav.classList.toggle('active');
+  return pt = true;
 });
 
+document.addEventListener('click', function(e){
+  if(e.target.id =='menu' && pt == true){
+    menu.classList.remove('active');
+  icon.classList.remove('active');
+  nav.classList.remove('active');
+  }});
                           
 // 20210805 change
 // const toggleBtn = document.getElementById('navbar__toggleBtn');
