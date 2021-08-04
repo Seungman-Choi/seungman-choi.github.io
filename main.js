@@ -14,7 +14,7 @@ toggleBtn.addEventListener('click', () => {
 // navLinks.forEach((l) => { //bootstrap in html connection can be worked.
 //   l.addEventListener('click', () => {toggleBtn.classList.toggle('show')})
 //   l.addEventListener('click', () => {bsCollapse.toggle()})
-  });
+//   });
 
 // document.addEventListener('click', function(e){
 // if(e.target.id =='menu' && pt == true){
