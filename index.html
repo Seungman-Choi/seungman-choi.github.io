@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+  <title>Web S.Choi </title>
+  <meta charset ="utf-8">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale-2.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/718ee7aebd.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <nav class ="navbar">
+    <a class="navbar__toggleBtn">
+        <i class="fas fa-bars" onclick="clickBtn()"></i>
+    </a>
+    <div class = "navbar__logo">
+      <img class = "img_profile" src = "./Image/Profile2.jpg"><br><br>
+      <!-- <i class="far fa-bookmark"></i> -->
+      <h1>Seungman Choi</h1>
+      <!-- <a class="navbar_a" href=""><h1>Seungman Choi</h1></a> -->
+      <p style ="font-size: 1vw;">Tel: +82-10-4405-7581 <br>
+      Email: seungman@kaist.ac.kr</p><br>
+
+    <ul class ="navbar__menu">
+
+    <li><a class="navbar_a" href ="#Project">Projects</a></li>
+    <li><a class="navbar_a" href ="#Pub">Publications</a></li>
+    <li><a class="navbar_a" href ="#Edu">Education</a></li>
+    <li><a class="navbar_a" href ="#Con">Contact</a></li>
+    </ul>
+    <ul class ="navbar__icons">
+      <li><a href ="./Image/CV_Choi.pdf" target="_blank" download title="Download CV" style = "font-size : 0.95em;">
+        <i class="fas fa-user-tag"></i>
+      </a></li>
+      <!-- <li><img class = "navicons" src = "./Image/CV.png"></i></li> -->
+      <li><a href="mailto:seungman@kaist.ac.kr" title="E-mail" style = "padding-right : 0.1em;">
+        <i class="fas fa-envelope"></i>
+      </li>
+    </ul>
+    </div>
+  </nav>
+    <div class ="container">
+    <div id = "header">
+        <br><br><br>
+    </div>
+    <div id ="section">
+      <a name="Home"></a>
+      <div id="spacer"></div>
+      <h1 class="h1_first">About me</h1>
+      <p class="bodytext">
+          I'm a technical researcher in the Mechanical Engineering Research Institute,
+          <strong>Korea Advanced Institute of Science and Technology (KAIST)</strong>, advised by Prof. Seung-Woo Kim & Prof. Young-Jin Kim.
+      </p>
+      <p class="bodytext">
+          I received B.S. and M.S. degrees from <strong>Tokyo Institute of Technology</strong> in 2017 and 2019, respectively.
+          </p>
+      <p class="bodytext">
+          My current research interests are <strong>"Ultra-precision engineering and metrology using femtosecond pulse laser".</strong>
+          Detailed research topics include:<br>
+          <ol style ="list-style-type: circle; padding-left: 60px;">
+          <li>
+          Interpretation of light-matter nonlinear interaction, e.g. high harmonic generation and surface plasmon polariton.<br>
+          </li>
+          <li>
+          development of robust EUV light source with high photon flux.
+          </li>
+          <li>
+          High-precision & ultrafast metrology via time-resolved EUV spectroscopy and diffraction based 2d imaging.<br>
+        </li> </ol>
+      </p>
+      <a name="Project"></a>
+      <div id="spacer"></div>
+      <h1 class="h1_first">Research Projects</h1>
+      <!-- <div class ="proj proj_left">
+        <h3>Advanced diffraction imaging </h3>
+        <p class="bodytext">
+          We demonstrated extreme-ultraviolet(EUV) light source with high photon flux based on lensless focusing scheme as described below.
+          Since EUV beam can be tightly focused onto an imaging sample,
+          far-field diffraction pattern with enough signal noise ratio might be provided, and therefore, give alternative way to acheive diffraction-based imaging.
+          We are trying to devise a new advanced diffraction imaging system that can utilize the advantages of our EUV light source,
+          compared to other diffraction imaging techniques and light sources.
+        </p>
+      </div>
+      <div class ="proj proj_right">
+        <img class ="bodyimg" src="./Image/slide02_1.png">
+      </div> -->
+        <div class ="proj proj_left" style="position:relative; top:-20px;">
+        <h3>EUV beam control</h3>
+        <p class="bodytext">
+        Although EUV radiation has been a growing research field of interest due to its wavelength-scale high resolution,
+        EUV light displays high absorption rate in almost all existing material, requiring an usage of unique reflective multilayered optics and hindering its applications in itself.
+        Our mission is to demonstrate robust EUV beam control method, e.g. EUV beam scanning and focusing without any help of EUV optics.
+        Based on noncollinear high harmonic generation scheme and a solid sample, the new table-top EUV light source was successfully developed.
+        It exhibited robust controllability of EUV beam propagation via wavefront modulation of the driving laser beams.
+        In addition, by spatio-temporally overlapping two driving annular beams with different converging angle at the sample, tight focusing of EUV annular beam as a form of bessel beam can also demonstrated (~400 nm focal spot).
+        We are preparing for submission to journal.
+        <br>
+        </p>
+      </div>
+      <div class ="proj proj_right">
+        <img class ="bodyimg" src="./Image/slide-01.png">
+        <p style ="font-size:0.8em; text-indent: 1em;">
+        Dynamic EUV scanning
+        </p>
+      </div>
+      <div class ="proj proj_left">
+        <h3>EUV spectral control & optimization </h3>
+        <p class="bodytext">
+        High harmonic generation is high nonlinear frequency upconversion process that requires intense ultrafast laser.
+        Therefore, any kind of degradation in drving laser intensity should be carefully considered.
+        By compensating for the phenomenon contributing to the decrease in its intensity, so called propagation effect, further amplification of the EUV yield can be acheived.
+        Our results showed not only exceptional increase of overal harmonic yield, but also selective amplification for certain harmonic in solid sample.
+        This research exhibits potential for internal electron dynamics analysis and attosecond science.
+        Our research is under review now.
+        </p>
+      </div>
+      <div class ="proj proj_right">
+        <img class ="bodyimg" src="./Image/slide-02.jpg">
+
+        <p style ="font-size:0.8em; text-indent: 1em;">
+          EUV spectral optimization via feedback control
+        </p>
+      </div>
+      <div class ="proj proj_left">
+        <h3>Tunable droplet generation </h3>
+        <p class="bodytext">
+          We demonstrated a mechanically and directionally tunable elastic device that enable to actively control droplet breakup.
+          In microfluidics, step emulsification has been attracting much attention; because it can easily scaleup the droplet formation based on its insensitivity to flow fluctuation.
+          However, since its droplet formation is fully geometry-dependent, active control for its size cannot be simply achieved by flow control.
+          We envisioned a droplet generating stystem dealing with both mass production and size controllability,
+          via soft materials allowing its nozzles' shrinkage and expansion.
+          Applying tensile stress on the device, we changed the nozzles' geometry and accordingly tuned some degree of the droplet size.
+          We are preparing for submission to journal. <br>
+        </p>
+      </div>
+      <div class ="proj proj_right">
+        <img class ="bodyimg" src="./Image/slide-03.png">
+        <p style ="font-size:0.8em; text-indent: 1em;">
+          Monodisperse droplets
+        </p>
+      </div>
+
+      <div class ="proj proj_left">
+        <h3>Electrostatic Gripper for flexible material  </h3>
+        <p class="bodytext">
+          My bachelor thesis was to develop an electrostatic force-driven gripper with a structure of beam-array,
+          offering sophisticated solution for gripping flexible materials.
+          Due to its high applicability to targets with various size and arbitrary surface profile,
+          the possibility of being alternative way to grip soft mater had been widely explored and investigated.
+          However, it was also known that precise arrangement of multilayer electrodes demands high precision of manufacturing
+          and limits its performance.
+          We demonstrated simple alternate wet & dry etching process via a single photo-mask,
+          which enable to process the multilayer thin films in the exactly same shape.
+          The developed dipolar-electrostatic gripper was free from alignment problems and as a result, it displayed improved performance in terms of adhesive force.
+          The study was published in 2018.
+
+        </p>
+      </div>
+      <div class ="proj proj_right">
+        <img class ="bodyimg" src="./Image/slide-04.jpg">
+        <p style ="font-size:0.8em; text-indent: 1em;">
+          Electrostatic gripper module fabrication
+        </p>
+      </div>
+
+      <div class ="proj proj_center">
+        <a name="Pub"></a>
+        <div id="spacer"></div>
+        <h1> Publications </h1>
+          <h3>International Journals </h3>
+          <p>
+            <ol class="Content">
+              <li><strong>(In Preparation)</strong> “Opticsless Control of Extreme Ultraviolet Beam based on High Harmonic Generation from Solids” <br>
+                 B. Kim*, <u>S. Choi</u>*, Y. W. Kim, Y.-J. Kim and S.-W. Kim,  *equally contributed to this work.
+              </li>
+              <li><strong>(In Preparation)</strong> “Soft Step Emulsification for Actively-tunable Droplet.” <br>
+                <u> S. Choi</u>, N. Tottori, T. Nisisako.
+              </li>
+              <li><strong>(Under Review)</strong> “Spectral Control of High Harmonic Generation via Tailoring Pulse Propagation in Solids” <br>
+                 Y. W. Kim*, B. Kim*, <u>S. Choi</u>*, H. K. Nam, H. Kim, Y.-J. Kim and S.-W. Kim, *equally contributed to this work.
+              </li>
+              <li> “Development of Bipolar Electrostatic Chuck Module having Array of Beam Assembly using Lithography Technique” <br>
+                      <u>S. Choi</u>, K. Wakabayashi, S. Saito, <i>Journal of Micromechanics and Microengineering</i>,
+                      <a href="https://iopscience.iop.org/article/10.1088/1361-6439/aae8ca/meta" target='_blank'>
+                      28.12: 125011, 2018.</a>
+              </li>
+            </ol>
+          </p>
+          <h3>Domestic Patent </h3>
+          <p>
+            <ol class="Content">
+              <li>"マイクロ流路乳化デバイス" <br>
+                T. Nisisako, <u>S. Choi</u> and N. Tottori,
+                Application num.: 2018-036016, Patent num.: <a href ="https://astamuse.com/ja/published/JP/No/2019150748" target='_blank'>2019-150748.</a>
+              </li>
+            </ol>
+          </p>
+
+          <h3>International Proceedings </h3>
+          <p>
+            <ol class="Content">
+              <li> “High Harmonic Generation from Bulk Crystals using Tailored Driving Femtosecond Laser Pulse” <br>
+                <u>S. Choi</u>, Y.W. Kim, B. Kim, H.K. Nam, Y.-J. Kim and S.-W. Kim, <i>2020 International Symposium on Precision Engineering and Sustainable Manufacturing (PRESM 2020) </i>,
+                Online Symposium, Nov. 15–18, 2020.
+              </li>
+              <li>“Mechanically and Directionally Tunable Soft Step Emulsification”<br>
+                <u>S. Choi</u>, N. Tottori and T. Nisisako, <i>The 22nd International Conference on Miniaturized Systems for Chemistry and Life Sciences (MicroTAS2018) </i>, Kaohsiung, TW, Nov. 11–15, 2018.
+              </li>
+              <li>“Development of Bipolar Electrostatic Chuck Module having Array of Beam Assembly using Lithography Technique”<br>
+                <u>S. Choi</u>, K. Wakabayashi and S. Saito, <i>2017 Materials Research Society Fall meeting (MRS 2017) </i>, Boston, MA, USA, Nov. 26–Dec 1, 2017.
+              </li>
+              <li>“A Soft and Disposable Step-emulsification Device for Generating Monodisperse Emulsions and Particles” <br>
+                <u>S. Choi</u>, N. Tottori, R. Zhang and T. Nisisako, <i>The 7th International Conference of Asian Society for Precision Engineering and Nanotechnology (ASPEN 2017) </i>, Seoul, Korea, Nov. 14–17, 2017.
+              </li>
+            </ol>
+          </p>
+          <div id="spacer"></div>
+          <h1> Grants & Awards </h1>
+          <h3> Grants </h3>
+          <p>
+            <ul class="Content">
+              <li><strong>ITO Educational Foundation Scholarship</strong> (JPY 180,000 per month)
+                <div class = "date">Apr 2017 – Mar 2019</div>
+              <br>ITO Foundation for International Education Exchange, JP.
+              </li>
+              <li><strong>Foreign Tour Business Grant</strong> (JPY 197,000 once)
+                <div class = "date"> Aug 2018 </div>
+              <br>The Precise Measurement Technology Promotion Foundation (PMTP-F), JP.
+
+              <li><strong>Korea-Japan Join Government Scholarship</strong> (JPY 130,000 per month)
+                <div class = "date"> Apr 2013 – Mar 2017</div>
+              <br>The Korean Government and The Japanese Government, KR&JP.
+
+              </li>
+            </ul>
+          </p>
+          <h3> Awards </h3>
+          <p>
+            <ul class="Content">
+              <li><strong> Excellence Award </strong>
+                <div class = "date"> Feb 2019 </div>
+                <br>Korean Scientists and Engineers Association in Japan (KSEAJ), JP.
+              </li>
+              <li><strong>MutoEiji Award (Academic Excellence Award in mechanical engineering department)	</strong>
+                <div class = "date"> Mar 2017 </div>
+              <br>The Japan Society for Design Engineering (JSDE), JP.
+              </li>
+            </ul>
+          </p>
+          <a name="Edu"></a>
+          <div id="spacer"></div>
+          <h1> Educational Background </h1>
+            <ul class="Content">
+                <li><strong>M.S. in Mechanical Engineering</strong>
+                  <div class = "date">Apr 2017 – Mar 2019</div>
+                <br>
+                Tokyo Institute of Technology, Tokyo, Japan
+                <br>
+                Thesis: Elastically deformable soft step emulsification for actively-tunable droplet.
+                <br>
+                Advisor: Prof. Takasi Nisisako
+                </li>
+              <li><strong>B.S. in Mechanical and Intelligent Systems Engineering</strong>
+                  <div class = "date">Apr 2013 – Mar 2017</div>
+              <br>
+              Tokyo Institute of Technology, Tokyo, Japan (GPA 3.69/4.00)
+              <br>
+              magna Cum Laude in 4 years (Top 10%)
+              <br>
+              Thesis: Development of bipolar electrostatic chuck module having array of beam assembly using lithography technique.
+              <br>
+              Advisor: Prof. Shigeki Saito
+              </li>
+              <li><strong>Preparatory Education</strong>
+                  <div class = "date">Apr 2012 – Mar 2013</div>
+              <br>
+              Korea-Japan Joint Government Scholarship Program
+              <br>
+              Kyunghee University and Tokyo Institute of Technology
+              <br>
+              Study about japanese, basic physics and mathematics for 6 months at each institute.
+              </li>
+            </ul>
+          <a name="Con"></a>
+          <div id="spacer"></div>
+          <h1> Contact Information </h1>
+          <h3>Seungman Choi </h3>
+          <strong>Technical Researcher</strong> <br>
+          <a href="http://pem.kaist.ac.kr/" target='_blank'> Labaratory for Precision Engineering and Metrology (PEM)</a>, <br>
+          Mechanical Engineering Research Institute, <br>
+          Korea Advanced Institute of Science and Technology (KAIST), <br>
+          335 Gwahangno, Guseong-Dong, Yuseong-Gu, Daejeon 305-701, Republic of Korea <br>
+          Tel: +82-10-4405-7581 <br>
+          Email: seungman@kaist.ac.kr
+          <br><br>
+          <img style ="width :50%;" src="./Image/Kaist logo.svg">
+      </div>
+  </div>
+</div>
+  <!-- <div id ="footer">
+      <h2> footer 영역</h2>
+  </div> -->
+</body>
+</html>
