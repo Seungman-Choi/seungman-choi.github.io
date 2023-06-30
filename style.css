@@ -39,7 +39,10 @@ body {
   padding-left: 20px;
   list-style-type: circle;
 }
-
+.highlight-blue {
+  background-color: #add8e6;
+  padding: 0 6px;
+  
 .navbar_a{ /*anchor tag*/
   text-decoration: none;
   font-size:1.2em;
